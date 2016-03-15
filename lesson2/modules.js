@@ -12,11 +12,11 @@ var anl = function(path){
     };
     switch(path){
         case "/index.html":
+            count++;
             resData.message = "Привіт світ!";
             break;
         case "/count.html":
-            count++;
-            resData.message = "Кількість запитів до сторінки - " + count;
+            resData.message = "Кількість запитів до сторінки index.html - " + count;
             break;
         default:
             resData.statusCode = 404;
